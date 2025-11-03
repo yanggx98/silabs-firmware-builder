@@ -10,8 +10,8 @@
 // Some manufacturers do not write a board or manufacturer name to the NCP.
 // Rather than writing the manufacturing tokens within the application, you can instead
 // supply overrides that will be preferred to the manufacturing token values.
-#define XNCP_MFG_MANUF_NAME  ("Silicon Labs")
-#define XNCP_MFG_BOARD_NAME  ("EFR32MG21")
+#define XNCP_MFG_MANUF_NAME  ("Nabu Casa")
+#define XNCP_MFG_BOARD_NAME  ("Home Assistant Connect ZBT-1")
 
 
 // Specify a build string that can be read by the host, augmenting its version info
