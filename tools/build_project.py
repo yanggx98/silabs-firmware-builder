@@ -545,13 +545,21 @@ def main():
 
     # Fix Gecko SDK bugs
     sl_rail_util_pti_config_h = args.build_dir / "config/sl_rail_util_pti_config.h"
-
     # PTI seemingly cannot be excluded, even if it is disabled
     if sl_rail_util_pti_config_h.exists():
         sl_rail_util_pti_config_h.write_text(
             sl_rail_util_pti_config_h.read_text().replace(
                 '#warning "RAIL PTI peripheral not configured"\n',
                 '// #warning "RAIL PTI peripheral not configured"\n',
+            )
+        )
+
+    sl_rail_util_pa_config_h = args.build_dir / "config/sl_rail_util_pa_config.h"
+    if sl_rail_util_pa_config_h.exists():
+        sl_rail_util_pa_config_h.write_text(
+            sl_rail_util_pa_config_h.read_text().replace(
+                '#define SL_RAIL_UTIL_PA_POWER_DECI_DBM      100"\n',
+                '#define SL_RAIL_UTIL_PA_POWER_DECI_DBM      200"\n',
             )
         )
 
