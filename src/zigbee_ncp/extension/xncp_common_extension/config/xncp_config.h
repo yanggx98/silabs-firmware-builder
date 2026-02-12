@@ -54,14 +54,14 @@
 // <i> Default TX power value if no explicit value is configured for a country
 // <i> Default: 8
 #ifndef XNCP_DEFAULT_RECOMMENDED_TX_POWER_DBM
-#define XNCP_DEFAULT_RECOMMENDED_TX_POWER_DBM 8
+#define XNCP_DEFAULT_RECOMMENDED_TX_POWER_DBM 20
 #endif
 
 // <o XNCP_DEFAULT_MAX_TX_POWER_DBM> Default maximum TX power in dBm
 // <i> Default maximum TX power value if no explicit value is configured for a country
 // <i> Default: 8
 #ifndef XNCP_DEFAULT_MAX_TX_POWER_DBM
-#define XNCP_DEFAULT_MAX_TX_POWER_DBM 8
+#define XNCP_DEFAULT_MAX_TX_POWER_DBM 20
 #endif
 
 // </h>
